@@ -1,0 +1,107 @@
+\documentclass[10pt,twocolumn,letterpaper]{article}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{times,epsfig,graphicx,amsmath,amssymb}
+\usepackage[breaklinks=true,colorlinks=true,bookmarks=false]{hyperref}
+\date{}
+
+%%%%%%%%%%%%%%%%
+
+\title{CSE 559A Project Template}
+
+\author{%
+First-Name Last-Name\\
+{\tt wustl-key@wustl.edu}
+}
+
+
+\begin{document}
+\maketitle
+
+\begin{center}\textbf{Abstract}\\~\\\parbox{0.475\textwidth}{\em
+    % Abstract goes here
+    
+    Right out roughly a one paragraph abstract that introduces your
+    report and project and provides a short summary. Keep this to less
+    than 15 lines.
+
+}\end{center}
+
+\section{Introduction}
+
+Please follow the steps outlined below when submitting your report.
+
+\begin{itemize}
+\item Divide the paper into sections (use the grading rubric on the
+  project page as a guide)
+  
+\item Excluding the references and acknowledgments section, your
+  report should be four pages long in this two column format.
+
+\item Use BibTeX to generate references and cite them in your text
+  using ``\\cite'' commands like so~\cite{szeliski2010computer}.
+
+\item Please number all of your sections and displayed equations---by
+  using equation environments instead of equation*.  This is good
+  practice as it is important for readers to be able to refer to any
+  particular equation.
+
+\item Use either single column figures like \ref{fig:onecol}, or two
+  column ones like \ref{fig:twocol}. Use the [!t] option in latex to
+  make sure all figures are at the top of the page. Add captions to
+  all your figures.
+
+\item Try to lay out your report so that the abstract and figure
+  captions tell an ``elevator pitch'' version of your story.
+
+\item Please use footnotes\footnote {This is what a footnote looks
+    like.  It often distracts the reader from the main flow of the
+    argument.} sparingly.  Indeed, try to avoid footnotes altogether
+  and include necessary peripheral observations in the text (within
+  parentheses, if you prefer, as in this sentence).
+\end{itemize}
+
+\begin{figure}[!t]
+\begin{center}
+\fbox{\rule{0pt}{3in} \rule{0.9\linewidth}{0pt}} % Place holder, replace with \includegraphics, etc.
+\end{center}
+   \caption{Example of caption.}
+\label{fig:twocol}
+\end{figure}
+
+\begin{figure*}[!t]
+\begin{center}
+\fbox{\rule{0pt}{4in} \rule{0.9\linewidth}{0pt}} % Place holder, replace with \includegraphics, etc.
+\end{center}
+   \caption{Example of caption.}
+\label{fig:onecol}
+\end{figure*}
+
+
+\section{Background \& Related Work}
+
+
+\section{Proposed Approach}
+
+You might want to break this up into multiple sections, or just subsections like so.
+
+\subsection{Description of Part A}
+\label{sec:parta}
+
+\subsection{Description of Part A}
+\label{sec:partb}
+
+\section{Experimental Results}
+
+Experimental results, or other analysis.
+
+\section{Conclusion}
+
+\section*{Acknowledgments}
+Describe what sources you had help from, and so on. But try to put as much as possible as direct references in the body of the paper (like to say, ``adapting the code provided by the authors of~\cite{blah}).
+
+{\small
+\bibliographystyle{ieee}
+\bibliography{refs} % Create file refs.bib, and run bibtex.
+}
+
+\end{document}
